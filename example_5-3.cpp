@@ -26,20 +26,20 @@ int main(){
     if (n==1) {
         printf("%d",1);
     }else {
-    a[0]=n;
-    while (n!=1) {
-        if (n%2) {
-            n/=2;
-            a[i++]=n;
-        }else {
-            n=3*n+1;
-            a[i++]=n;
-        }
-    }
-    i--;
-    while (i--) {
-    printf("%d ",a[i]);
-    }
+    	a[0]=n;
+    	while (n!=1) {
+    	    if (n%2 == 0) {
+    	        n/=2;
+    	        a[i++]=n;
+    	    }else {
+    	        n=3*n+1;
+    	        a[i++]=n;
+    	    }
+    	}
+		a[i]=1;
+    	while (i--) {
+    		printf("%d ",a[i]);
+    	}
     }
     return 0;
 }
