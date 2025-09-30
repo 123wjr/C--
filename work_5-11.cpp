@@ -1,3 +1,4 @@
+// P1205
 #include <cstdio>
 int main(){
     int n;
