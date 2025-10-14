@@ -1,5 +1,6 @@
 // P1042
 #include <cstdio>
+#include <iostream>
 #include <string>
 int W,L;
 char tem;
@@ -9,8 +10,11 @@ bool win(int rule){
 }
 
 int main(){
+	std::ios::sync_with_stdio(false);
+	std::cin.tie(0);
+	std::cout.tie(0);
 	do{
-		scanf("%c",&tem);
+		std::cin>>tem; 
 		if (tem !='\n'){
 			result+=tem;
 			if (tem !='E') {
